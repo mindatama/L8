@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');
 Route::get('auth/google/callback', [UserController::class, 'handleProviderCallback'])->name('user.google.callback');
 
-Route::get('checkout', function () {
+Route::get('checkout/{camp:slug}', function () {
     return view('checkout');
 })->name('checkout');
 
