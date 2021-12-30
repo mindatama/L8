@@ -18,4 +18,8 @@ class Checkout extends Model
         'cvc',
         'is_paid'
     ];
+
+    public function setExpiredAtribute($value){
+        $this->attributes['expired'] = date('Y-m-t', strtotime($value));
+    }
 }
