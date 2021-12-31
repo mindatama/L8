@@ -25,7 +25,12 @@ class Store extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required'
+            'name' => 'required',
+            'email' => 'required|email',
+            'occupation' => 'required',
+            'card_number' => 'required',
+            'expired' => 'required',
+            'cvc' => 'required'
         ];
     }
 }
