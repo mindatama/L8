@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="banner">
+{{-- <section class="banner">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-11 col-12">
@@ -36,10 +36,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
-<section class="benefits">
+{{-- <section class="benefits">
     <div class="container">
         <div class="row text-center pb-70">
             <div class="col-lg-12 col-12 header-wrap">
@@ -98,9 +98,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
-<section class="steps">
+{{-- <section class="steps">
     <div class="container">
         <div class="row item-step pb-70">
             <div class="col-lg-6 col-12 text-center">
@@ -167,7 +167,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="pricing">
     <div class="container">
@@ -317,15 +317,15 @@
                 </div>
             </div>
         </div>
-        <div class="row pb-70">
+        {{-- <div class="row pb-70">
             <div class="col-lg-12 col-12 text-center">
                 <img src="{{asset('images/brands.png')}}" height="30" alt="">
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
 
-<section class="testimonials">
+{{-- <section class="testimonials">
     <div class="container">
         <div class="row text-center pb-70">
             <div class="col-lg-12 col-12 header-wrap">
@@ -409,5 +409,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 @endsection
