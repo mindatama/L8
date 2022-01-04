@@ -5,7 +5,7 @@ Hey {{$checkout->User->email}}
 <br>
 thanks for regist
 
-@component('mail::button', ['url' => route('user.checkout.invoice', $checkout->id)])
+@component('mail::button', ['url' => route('dashboard', $checkout->id)])
 Get Invoice
 @endcomponent
 
