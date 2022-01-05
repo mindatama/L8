@@ -182,11 +182,11 @@
                 <p class="support">
                     Learn how to speaking in public to demonstrate your <br> final project and receive the important feedbacks
                 </p>
-                <p class="mt-5">
+                {{-- <p class="mt-5">
                     <a href="#" class="btn btn-master btn-thirdty me-3">
                         View Syllabus
                     </a>
-                </p>
+                </p> --}}
             </div>
             <div class="col-lg-7 col-12">
                 <div class="row">
@@ -213,53 +213,6 @@
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    1-1 Mentoring Program
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Final Project Certificate
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Offline Course Videos
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Future Job Opportinity
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Premium Design Kit
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Website Builder
-                                </p>
-                                <div class="clear"></div>
                             </div>
                             <p>
                                 <a href="{{route('checkout.create', 'gila-belajar')}}" class="btn btn-master btn-primary w-100 mt-3">
@@ -291,21 +244,6 @@
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing mb-4">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Offline Course Videos
-                                </p>
-                                <div class="clear"></div>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="item-benefit-pricing">
-                                <img src="{{asset('images/ic_check.svg')}}" alt="">
-                                <p>
-                                    Future Job Opportinity
-                                </p>
-                                <div class="clear"></div>
                             </div>
                             <p>
                                 <a href="{{route('checkout.create', 'baru-mulai')}}" class="btn btn-master btn-secondary w-100 mt-3">
