@@ -6,7 +6,7 @@
         <div class="col-8 offset-2">
             <div class="card">
                 <div class="card-header">
-                    My camps
+                    Our Jobs
                 </div>
                 <div class="card-body">
                     {{-- @include('components.alert') --}}

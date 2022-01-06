@@ -174,13 +174,13 @@
         <div class="row pb-70">
             <div class="col-lg-5 col-12 header-wrap copywriting">
                 <p class="story">
-                    GOOD INVESTMENT
+                    BUMA Tabang Project
                 </p>
                 <h2 class="primary-header text-white">
-                    Start Your Journey
+                    Jobpending App
                 </h2>
                 <p class="support">
-                    Learn how to speaking in public to demonstrate your <br> final project and receive the important feedbacks
+                    serah terima pekerjaan <br> sec produksi & engginer
                 </p>
                 {{-- <p class="mt-5">
                     <a href="#" class="btn btn-master btn-thirdty me-3">
@@ -193,15 +193,15 @@
                     <div class="col-lg-6 col-12">
                         <div class="table-pricing paket-gila">
                             <p class="story text-center">
-                                GILA BELAJAR
+                                Pekerjaan Rutin
                             </p>
                             <h1 class="price text-center">
-                                $280K
+                                Daily
                             </h1>
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{asset('images/ic_check.svg')}}" alt="">
                                 <p>
-                                    Pro Techstack Kit
+                                    contoh pekerjaan 1
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -209,14 +209,14 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{asset('images/ic_check.svg')}}" alt="">
                                 <p>
-                                    iMac Pro 2021 & Display
+                                    contoh pekerjaan 2
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
                             </div>
                             <p>
                                 <a href="{{route('checkout.create', 'gila-belajar')}}" class="btn btn-master btn-primary w-100 mt-3">
-                                    Take This Plan
+                                    Create This Plan
                                 </a>
                             </p>
                         </div>
@@ -224,15 +224,15 @@
                     <div class="col-lg-6 col-12">
                         <div class="table-pricing paket-biasa">
                             <p class="story text-center">
-                                BARU MULAI
+                                Non Rutin
                             </p>
                             <h1 class="price text-center">
-                                $140K
+                                Non Rutin
                             </h1>
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{asset('images/ic_check.svg')}}" alt="">
                                 <p>
-                                    1-1 Mentoring Program
+                                    pelebaran jalan
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -240,7 +240,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{asset('images/ic_check.svg')}}" alt="">
                                 <p>
-                                    Final Project Certificate
+                                    perapian tanggul
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>

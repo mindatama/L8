@@ -9,7 +9,7 @@
                     DASHBOARD
                 </p>
                 <h2 class="primary-header ">
-                    My Bootcamps
+                    Our Jobs
                 </h2>
             </div>
         </div>
@@ -34,9 +34,9 @@
                         </td>
                         <td>
                             @if ($checkout->is_paid)
-                            <strong class="text-success">Payment Success</strong>
+                            <strong class="text-success">Job Success</strong>
                             @else
-                            <strong>Waiting for Payment</strong>
+                            <strong>On Progress</strong>
                             @endif
                         </td>
                         <td>
