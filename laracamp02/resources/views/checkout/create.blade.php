@@ -6,10 +6,10 @@
         <div class="row text-center pb-70">
             <div class="col-lg-12 col-12 header-wrap">
                 <p class="story">
-                    YOUR FUTURE CAREER
+                    Bisa, Harus Bisa, Pasti Bisa
                 </p>
                 <h2 class="primary-header">
-                    Start Invest Today
+                    Saya dan Anda Selamat Setiap Hari
                 </h2>
             </div>
         </div>
@@ -23,7 +23,7 @@
                                 {{$camp->title}}
                             </h1>
                             <p class="description">
-                                Bootcamp ini akan mengajak Anda untuk belajar penuh mulai dari pengenalan dasar sampai membangun sebuah projek asli
+                                Deskripsikan pekerjaan saat ini
                             </p>
                         </div>
                     </div>
@@ -32,28 +32,28 @@
                         <form action="{{route('checkout.store', $camp->id)}}" class="basic-form" method="POST">
                             @csrf
                             <div class="mb-4">
-                                <label class="form-label">Full Name</label>
+                                <label class="form-label">Name requester</label>
                                 <input name="name" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('name') ?: Auth::user()->name}}" />
                                 @if ($errors->has('name'))
                                     <p class="text-danger">{{$errors->first('name')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Email Address</label>
+                                <label class="form-label">Email requester</label>
                                 <input name="email" type="email" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('email') ?: Auth::user()->email}}" />
                                 @if ($errors->has('email'))
                                     <p class="text-danger">{{$errors->first('email')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Occupation</label>
+                                <label class="form-label">Judul Pekerjaan</label>
                                 <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->occupation}}" />
                                 @if ($errors->has('occupation'))
                                     <p class="text-danger">{{$errors->first('occupation')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Card Number</label>
+                                <label class="form-label">deskripsi pekerjaan</label>
                                 <input name="card_number" type="number" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('card_number') ?: Auth::user()->card_number}}"/>
                                 @if ($errors->has('card_number'))
                                     <p class="text-danger">{{$errors->first('card_number')}}</p>    
@@ -62,14 +62,14 @@
                             <div class="mb-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">Expired</label>
+                                        <label class="form-label">Tanggal pekerjaan</label>
                                         <input name="expired" type="date" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('expired') ?: Auth::user()->expired}}" />
                                         @if ($errors->has('expired'))
                                             <p class="text-danger">{{$errors->first('expired')}}</p>    
                                         @endif
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">CVC</label>
+                                        <label class="form-label">estimasi hari</label>
                                         <input name="cvc" type="number" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" maxlength="3" value="{{old('cvc') ?: Auth::user()->cvc}}" />
                                         @if ($errors->has('cvc'))
                                             <p class="text-danger">{{$errors->first('cvc')}}</p>    
@@ -77,9 +77,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="w-100 btn btn-primary">Pay Now</button>
+                            <button type="submit" class="w-100 btn btn-primary">Register Job Now</button>
                             <p class="text-center subheader mt-4">
-                                <img src="{{asset('images/ic_secure.svg')}}" alt=""> Your payment is secure and encrypted.
+                                <img src="{{asset('images/ic_secure.svg')}}" alt=""> check ulang pekerjaan berikut
                             </p>
                         </form>
                     </div>

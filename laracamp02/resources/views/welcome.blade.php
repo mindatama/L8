@@ -215,7 +215,7 @@
                                 <div class="divider"></div>
                             </div>
                             <p>
-                                <a href="{{route('checkout.create', 'gila-belajar')}}" class="btn btn-master btn-primary w-100 mt-3">
+                                <a href="{{route('checkout.create', 'daily')}}" class="btn btn-master btn-primary w-100 mt-3">
                                     Create This Plan
                                 </a>
                             </p>
@@ -246,7 +246,7 @@
                                 <div class="divider"></div>
                             </div>
                             <p>
-                                <a href="{{route('checkout.create', 'baru-mulai')}}" class="btn btn-master btn-primary w-100 mt-3">
+                                <a href="{{route('checkout.create', 'non-rutin')}}" class="btn btn-master btn-primary w-100 mt-3">
                                     Create This Plan
                                 </a>
                             </p>

@@ -26,11 +26,11 @@
                                 <strong>{{$checkout->Camp->title}}</strong>
                             </p>
                             <p>
-                                {{$checkout->created_at->format('M d, Y')}}
+                                {{$checkout->created_at->format('M d, H:i')}}
                             </p>
                         </td>
                         <td>
-                            <strong>${{$checkout->Camp->price}}</strong>
+                            <strong>{{$checkout->User->name}}</strong>
                         </td>
                         <td>
                             @if ($checkout->is_paid)

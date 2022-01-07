@@ -12,10 +12,10 @@
                     WHAT A DAY!
                 </p>
                 <h2 class="primary-header ">
-                    Berhasil Checkout
+                    Berhasil Registed
                 </h2>
                 <a href="{{route('dashboard')}}" class="btn btn-primary mt-3">
-                    My Dashboard
+                    My Dashboard (Registed Jobs)
                 </a>
             </div>
         </div>

@@ -15,7 +15,7 @@
                             <tr>
                                 <th>User</th>
                                 <th>Plan</th>
-                                <th>Price</th>
+                                {{-- <th>Price</th> --}}
                                 <th>Register Job</th>
                                 <th>Job Status</th>
                                 <th>Action</th>
@@ -26,7 +26,7 @@
                                 <tr>
                                     <td>{{$checkout->User->name}}</td>
                                     <td>{{$checkout->Camp->title}}</td>
-                                    <td>{{$checkout->Camp->price}}</td>
+                                    {{-- <td>{{$checkout->Camp->price}}</td> --}}
                                     <td>{{$checkout->created_at->format('d M H:i')}}</td>
                                     <td>
                                         @if ($checkout->is_paid)

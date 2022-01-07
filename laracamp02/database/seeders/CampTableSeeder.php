@@ -14,11 +14,11 @@ class CampTableSeeder extends Seeder
      */
     public function run()
     {
-        $camps = [['title' => 'gila belajar', 'slug' => 'gila-belajar', 'price' => 140,
+        $camps = [['title' => 'daily', 'slug' => 'daily', 'price' => 140,
     'created_at' => date('Y-m-d H:i:s', time()),
     'updated_at' => date('Y-m-d H:i:s', time()),
     ],
-    ['title' => 'baru mulai', 'slug' => 'baru-mulai', 'price' => 280,
+    ['title' => 'non rutin', 'slug' => 'non-rutin', 'price' => 280,
     'created_at' => date('Y-m-d H:i:s', time()),
     'updated_at' => date('Y-m-d H:i:s', time()),
     ]
