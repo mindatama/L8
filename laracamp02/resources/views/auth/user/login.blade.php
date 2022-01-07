@@ -24,7 +24,7 @@
             <img src="{{asset('images/ill_login_new.png')}}" alt="">
         </div>
         <div class="right">
-            <img src="{{asset('images/images/logo.png')}}" class="logo" alt="">
+            <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
             <h1 class="header-third">
                 Start Today
             </h1>
@@ -36,7 +36,7 @@
                     <img src="/assets/images/ic_google.svg" class="icon" alt=""> Sign In with Google
                 </a>
             </p>
-            <img src="{{asset('images/people.png')}}" class="people" alt="">
+            <img src="{{asset('images/people_buma.png')}}" class="people" alt="">
         </div>
     </section>
 

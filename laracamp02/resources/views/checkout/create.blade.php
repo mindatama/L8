@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-12">
                         <div class="item-bootcamp">
-                            <img src="{{asset('images/item_bootcamp.png')}}" alt="" class="cover">
+                            <img src="{{asset('images/item_bootcamp_buma.png')}}" alt="" class="cover">
                             <h1 class="package text-uppercase">
                                 {{$camp->title}}
                             </h1>
