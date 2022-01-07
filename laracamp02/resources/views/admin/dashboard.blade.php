@@ -14,10 +14,10 @@
                         <thead>
                             <tr>
                                 <th>User</th>
-                                <th>Camp</th>
+                                <th>Plan</th>
                                 <th>Price</th>
-                                <th>Register</th>
-                                <th>Paid Status</th>
+                                <th>Register Job</th>
+                                <th>Job Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -27,19 +27,19 @@
                                     <td>{{$checkout->User->name}}</td>
                                     <td>{{$checkout->Camp->title}}</td>
                                     <td>{{$checkout->Camp->price}}</td>
-                                    <td>{{$checkout->created_at->format('M d Y')}}</td>
+                                    <td>{{$checkout->created_at->format('d M H:i')}}</td>
                                     <td>
                                         @if ($checkout->is_paid)
-                                            <span class="badge bg-success">Paid</span>
+                                            <span class="badge bg-success">Done</span>
                                         @else
-                                            <span class="badge bg-warning">Waiting</span>
+                                            <span class="badge bg-warning">Progress</span>
                                         @endif
                                     </td>
                                     <td>
                                         @if (!$checkout->is_paid)
                                         <form action="{{route('admin.checkout.update', $checkout->id)}}" method="post">
                                             @csrf
-                                            <button class="btn btn-primary btn-sm">Set to Paid</button>
+                                            <button class="btn btn-primary btn-sm">Set to Done</button>
                                         </form>
                                         @endif
                                     </td>

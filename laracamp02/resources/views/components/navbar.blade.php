@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand" href="{{route('welcome')}}">
-            <img src="{{asset('images/logo.png')}}" alt="">
+            <img src="{{asset('images/logobuma.png')}}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@
                     <a class="nav-link active" aria-current="page" href="{{route('dashboard')}}">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('login.admin')}}">Admin Login</a>
+                    <a class="nav-link" href="{{route('login.admin')}}">Approve Login</a>
                 </li>
             </ul>
             @auth
@@ -38,9 +38,9 @@
                 <a href="{{route('login')}}" class="btn btn-master btn-secondary me-3">
                     Sign In
                 </a>
-                <a href="{{route('login')}}" class="btn btn-master btn-primary">
+                {{-- <a href="{{route('login')}}" class="btn btn-master btn-primary">
                     Sign Up
-                </a>
+                </a> --}}
             </div>
             @endauth
         </div>
