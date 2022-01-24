@@ -21,7 +21,7 @@
 
     <section class="login-user">
         <div class="left">
-            <img src="{{asset('images/ill_login_new.png')}}" alt="">
+            <img src="" alt="">
         </div>
         <div class="right">
             <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
