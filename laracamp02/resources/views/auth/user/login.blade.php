@@ -25,7 +25,7 @@
         {{-- <div class="left">
             <img src="" alt="">
         </div> --}}
-        <div class="right">
+        <div class="left">
             <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
             <h1 class="header-third">
                 Start Today
