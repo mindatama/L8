@@ -25,7 +25,7 @@
         {{-- <div class="left">
             <img src="" alt="">
         </div> --}}
-        {{-- <div class="right"> --}}
+        <div class="right">
             <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
             <h1 class="header-third">
                 Start Today
@@ -39,7 +39,7 @@
                 </a>
             </p>
             <img src="{{asset('images/people_buma.png')}}" class="people" alt="">
-        {{-- </div> --}}
+        </div>
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
