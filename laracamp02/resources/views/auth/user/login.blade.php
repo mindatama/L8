@@ -39,7 +39,9 @@
                     <img src="{{asset('images/ic_google.svg')}}" class="icon" alt=""> Sign In with Google
                 </a>
             </p>
-            <img src="{{asset('images/logobuma.png')}}" class="navbar-brand" alt="">
+            <a class="navbar-brand" href="{{route('user.login.google')}}">
+                <img src="{{asset('images/logobuma.png')}}" alt="">
+            </a>
             </div>
         </div>
     </section>
