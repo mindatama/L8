@@ -26,8 +26,8 @@
             <img src="" alt="">
         </div> --}}
         <div class="container">
-            <div class="row pb-70">
-                <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
+            <div class="row pb-70 header-wrap copywriting">
+                {{-- <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt=""> --}}
             <h1 class="header-third">
                 Start Today
             </h1>
