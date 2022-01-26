@@ -28,7 +28,7 @@ class AfterRegister extends Mailable
      */
     public function build()
     {
-        return $this->subject('Registration on Laracamp')->markdown('emails.user.afterRegister', [
+        return $this->subject('Registration on Jobpending apps')->markdown('emails.user.afterRegister', [
             'user' => $this->user
         ]);
     }

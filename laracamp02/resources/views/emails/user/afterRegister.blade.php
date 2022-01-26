@@ -2,7 +2,7 @@
 # Welcome!
 
 Hello {{$user->email}}
-welcome to the cave on laracamp
+welcome to the cave on jobpending apps
 
 @component('mail::button', ['url' => route('login')])
 login here
