@@ -19,6 +19,8 @@
 
 <body>
 
+    @section('content')
+
     <section class="login-user">
         {{-- <div class="left">
             <img src="" alt="">
