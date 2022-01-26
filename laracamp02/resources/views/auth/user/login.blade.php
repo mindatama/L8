@@ -25,8 +25,9 @@
         {{-- <div class="left">
             <img src="" alt="">
         </div> --}}
-        <div class="left">
-            <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
+        <div class="container">
+            <div class="row pb-70">
+                <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
             <h1 class="header-third">
                 Start Today
             </h1>
@@ -39,6 +40,7 @@
                 </a>
             </p>
             <img src="{{asset('images/people_buma.png')}}" class="people" alt="">
+            </div>
         </div>
     </section>
 
