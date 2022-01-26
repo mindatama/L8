@@ -28,7 +28,7 @@ class AfterCheckout extends Mailable
      */
     public function build()
     {
-        return $this->subject("Register Camp: {$this->checkout->Camp->title}")->markdown('emails.checkout.afterCheckout', [
+        return $this->subject("Jobpending: {$this->checkout->Camp->title} berhasil dibuat")->markdown('emails.checkout.afterCheckout', [
             'checkout' =>$this->checkout
         ]);
     }
