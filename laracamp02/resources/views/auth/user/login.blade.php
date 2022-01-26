@@ -20,9 +20,9 @@
 <body>
 
     <section class="login-user">
-        <div class="left">
+        {{-- <div class="left">
             <img src="" alt="">
-        </div>
+        </div> --}}
         <div class="right">
             <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt="">
             <h1 class="header-third">
