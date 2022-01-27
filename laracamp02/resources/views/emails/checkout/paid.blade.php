@@ -1,9 +1,9 @@
 @component('mail::message')
-# Your transaction has been confirmed
+# Pekerjaanmu telah selesai
 
-hey {{$checkout->User->name}}
+semangat pagi {{$checkout->User->name}}
 <br>
-transaction confirmed, enjoy the {{$checkout->Camp->title}} camp
+pekerjaan {$this->checkout->Camp->title} telah selesai, pertahankan safety performance-nya. saya dan anda selamat setiap hari
 
 @component('mail::button', ['url' => route('user.dashboard')])
 My Dashboard
