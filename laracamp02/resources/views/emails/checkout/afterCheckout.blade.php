@@ -3,7 +3,7 @@
 
 Hey {{$checkout->User->name}}
 <br>
-thanks for upload job {{$checkout->Camp->title}} , saya dan anda selamat setiap hari
+thanks for upload job {$this->checkout->Camp->title}, saya dan anda selamat setiap hari
 
 @component('mail::button', ['url' => route('dashboard', $checkout->id)])
 Going to Dashboard
