@@ -3,7 +3,7 @@
 
 semangat pagi {{$checkout->User->name}}
 <br>
-pekerjaan {$this->checkout->Camp->title} telah selesai, pertahankan safety performance-nya. saya dan anda selamat setiap hari
+pekerjaan {{$checkout->Camp->title}} telah selesai, pertahankan safety performance-nya. saya dan anda selamat setiap hari
 
 @component('mail::button', ['url' => route('user.dashboard')])
 My Dashboard
