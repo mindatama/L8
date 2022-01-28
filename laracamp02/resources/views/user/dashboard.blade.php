@@ -23,7 +23,7 @@
                         </td>
                         <td>
                             <p>
-                                <strong>{{$checkout->User->name}}</strong>
+                                <strong>{{$checkout->Camp->title}}</strong>
                             </p>
                             <p>
                                 {{$checkout->created_at->format('M d, H:i')}}
