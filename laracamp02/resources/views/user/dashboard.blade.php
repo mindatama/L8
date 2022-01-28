@@ -22,8 +22,8 @@
                             <img src="{{asset('images/item_bootcamp_buma.png')}}" height="120" alt="">
                         </td>
                         <td>
-                            <p class="mb-2">
-                                <strong>{{$checkouts->Judul}}</strong>
+                            <p>
+                                <strong>{{$checkout->Judul}}</strong>
                             </p>
                             <p>
                                 {{$checkout->created_at->format('M d, H:i')}}
