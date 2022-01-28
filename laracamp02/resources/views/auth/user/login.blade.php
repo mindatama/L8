@@ -28,10 +28,10 @@
         <div class="container">
             <div class="row pb-70 header-wrap copywriting">
                 {{-- <img src="{{asset('images/images/logo_buma.png')}}" class="logo" alt=""> --}}
-            <h1 class="header-third">
+            <h1 class="header-third w-100 mt-3">
                 Start Today
             </h1>
-            <p class="subheader">
+            <p class="subheader w-100 mt-3">
                 Because tomorrow become never!
             </p>
             <p>
@@ -40,8 +40,8 @@
                 </a>
             </p>
             <td width="18%">
-                <a class="navbar-brand" href="{{route('user.login.google')}}">
-                    <img src="{{asset('images/logobuma.png')}}" alt="">
+                <a class="navbar-brand w-100 mt-3" href="{{route('user.login.google')}}">
+                    <img src="{{asset('images/logobuma.png')}}" height="120" alt="">
                 </a>
             </td>
             </div>
