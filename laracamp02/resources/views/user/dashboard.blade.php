@@ -23,7 +23,7 @@
                         </td>
                         <td>
                             <p class="mb-2">
-                                <strong>{{$checkout->Judul}}</strong>
+                                <strong>{{$checkouts->Judul}}</strong>
                             </p>
                             <p>
                                 {{$checkout->created_at->format('M d, H:i')}}
