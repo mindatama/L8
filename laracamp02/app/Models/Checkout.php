@@ -17,6 +17,8 @@ class Checkout extends Model
         'card_number',
         'expired',
         'cvc',
+        'judul',
+        'deskripsi',
         'is_paid'
     ];
 

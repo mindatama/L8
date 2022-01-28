@@ -20,6 +20,8 @@ class CreateCheckoutsTable extends Migration
             $table->string('card_number');
             $table->date('expired');
             $table->string('cvc');
+            $table->string('judul');
+            $table->string('deskripsi');
             $table->boolean('is_paid')->default(false);
             $table->timestamps();
             $table->softDeletes();
