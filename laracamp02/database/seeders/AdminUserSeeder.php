@@ -20,6 +20,12 @@ class AdminUserSeeder extends Seeder
             'email_verified_at' => date('Y-m-d H:i:s', time()),
             'password' => \bcrypt('admin'),
             'is_admin' => true
+        ],[
+            'name' => 'koko',
+            'email' => 'wijatmoko.m@bukitmakmur.com',
+            'email_verified_at' => date('Y-m-d H:i:s', time()),
+            'password' => \bcrypt('admin'),
+            'is_admin' => true
         ]);
     }
 }
