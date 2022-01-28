@@ -32,17 +32,17 @@
                         <form action="{{route('checkout.store', $camp->id)}}" class="basic-form" method="POST">
                             @csrf
                             <div class="mb-4">
-                                <label class="form-label">Name requester</label>
-                                <input name="name" readonly type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('name') ?: Auth::user()->name}}" />
-                                @if ($errors->has('name'))
-                                    <p class="text-danger">{{$errors->first('name')}}</p>    
-                                @endif
-                            </div>
-                            <div class="mb-4">
                                 <label class="form-label">Email requester</label>
                                 <input name="email" readonly type="email" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('email') ?: Auth::user()->email}}" />
                                 @if ($errors->has('email'))
                                     <p class="text-danger">{{$errors->first('email')}}</p>    
+                                @endif
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Name requester</label>
+                                <input name="name" readonly type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('name') ?: Auth::user()->name}}" />
+                                @if ($errors->has('name'))
+                                    <p class="text-danger">{{$errors->first('name')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
