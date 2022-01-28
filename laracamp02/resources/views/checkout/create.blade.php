@@ -47,14 +47,14 @@
                             </div>
                             <div class="mb-4">
                                 <label class="form-label">Judul Pekerjaan</label>
-                                <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->occupation}}" />
+                                <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->judul}}" />
                                 @if ($errors->has('occupation'))
                                     <p class="text-danger">{{$errors->first('occupation')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
                                 <label class="form-label">deskripsi pekerjaan</label>
-                                <input name="card_number" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('card_number') ?: Auth::user()->card_number}}"/>
+                                <input name="card_number" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('card_number') ?: Auth::user()->deskripsi}}"/>
                                 @if ($errors->has('card_number'))
                                     <p class="text-danger">{{$errors->first('card_number')}}</p>    
                                 @endif
