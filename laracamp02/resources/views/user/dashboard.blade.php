@@ -23,14 +23,14 @@
                         </td>
                         <td>
                             <p>
-                                <strong>{{$checkout->Judul}}</strong>
+                                <strong>{{$checkout->User->name}}</strong>
                             </p>
                             <p>
                                 {{$checkout->created_at->format('M d, H:i')}}
                             </p>
                         </td>
                         <td>
-                            <strong>{{$checkout->User->name}}</strong>
+                            <strong>{{$checkout->deskripsi}}</strong>
                         </td>
                         <td>
                             @if ($checkout->is_paid)
