@@ -41,7 +41,7 @@
             </p>
             <td width="18%">
                 <a class="navbar-brand w-100 mt-3" href="{{route('user.login.google')}}">
-                    <img src="{{asset('images/logobuma.png')}}" height="120" alt="">
+                    <img src="{{asset('images/logobuma.png')}}" height="80" alt="">
                 </a>
             </td>
             </div>
