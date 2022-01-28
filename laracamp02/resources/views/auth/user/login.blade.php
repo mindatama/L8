@@ -32,7 +32,7 @@
                 Start Today
             </h1>
             <p class="subheader">
-                Because tomorrow become never
+                Because tomorrow become never!
             </p>
             <p>
                 <a class="btn btn-master btn-google-login w-100 mt-3" href="{{route('user.login.google')}}">
