@@ -33,7 +33,7 @@
                             <strong>{{$checkout->judul}}</strong>
                         </p>
                             <p>
-                            <strong>{{$checkout->deskripsi}}</strong>
+                            {{$checkout->deskripsi}}</strong>
                         </p>
                     </td>
                         <td>
