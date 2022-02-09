@@ -46,14 +46,21 @@
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Judul Pekerjaan</label>
+                                <label class="form-label">Judul</label>
+                                <input name="judul" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('judul') ?: Auth::user()->judul}}" />
+                                @if ($errors->has('judul'))
+                                    <p class="text-danger">{{$errors->first('judul')}}</p>    
+                                @endif
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Judul Pekerjaan occupation</label>
                                 <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->judul}}" />
                                 @if ($errors->has('occupation'))
                                     <p class="text-danger">{{$errors->first('occupation')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">deskripsi pekerjaan</label>
+                                <label class="form-label">deskripsi pekerjaan card_number</label>
                                 <input name="card_number" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('card_number') ?: Auth::user()->deskripsi}}"/>
                                 @if ($errors->has('card_number'))
                                     <p class="text-danger">{{$errors->first('card_number')}}</p>    
@@ -62,14 +69,14 @@
                             <div class="mb-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">Tanggal pekerjaan</label>
+                                        <label class="form-label">Tanggal pekerjaan expired</label>
                                         <input name="expired" type="date" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('expired') ?: Auth::user()->expired}}" />
                                         @if ($errors->has('expired'))
                                             <p class="text-danger">{{$errors->first('expired')}}</p>    
                                         @endif
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">estimasi hari</label>
+                                        <label class="form-label">estimasi hari cvc</label>
                                         <input name="cvc" type="number" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" maxlength="3" value="{{old('cvc') ?: Auth::user()->cvc}}" />
                                         @if ($errors->has('cvc'))
                                             <p class="text-danger">{{$errors->first('cvc')}}</p>    
