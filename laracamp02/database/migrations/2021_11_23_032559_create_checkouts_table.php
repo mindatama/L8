@@ -17,11 +17,11 @@ class CreateCheckoutsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('camp_id')->constrained();
-            $table->string('card_number');
+            $table->string('card_number')->nullable();
             $table->date('expired');
             $table->string('cvc');
-            $table->string('judul')->nullable();
-            $table->string('deskripsi')->nullable();
+            $table->string('judul');
+            $table->string('deskripsi');
             $table->boolean('is_paid')->default(false);
             $table->timestamps();
             $table->softDeletes();

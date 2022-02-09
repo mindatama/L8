@@ -59,20 +59,20 @@
                                     <p class="text-danger">{{$errors->first('deskripsi')}}</p>    
                                 @endif
                             </div>
-                            <div class="mb-4">
+                            {{-- <div class="mb-4">
                                 <label class="form-label">Judul Pekerjaan occupation</label>
                                 <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->judul}}" />
                                 @if ($errors->has('occupation'))
                                     <p class="text-danger">{{$errors->first('occupation')}}</p>    
                                 @endif
-                            </div>
-                            <div class="mb-4">
+                            </div> --}}
+                            {{-- <div class="mb-4">
                                 <label class="form-label">deskripsi pekerjaan card_number</label>
                                 <input name="card_number" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('card_number') ?: Auth::user()->deskripsi}}"/>
                                 @if ($errors->has('card_number'))
                                     <p class="text-danger">{{$errors->first('card_number')}}</p>    
                                 @endif
-                            </div>
+                            </div> --}}
                             <div class="mb-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
