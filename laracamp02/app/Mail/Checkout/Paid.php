@@ -29,7 +29,7 @@ class Paid extends Mailable
      */
     public function build()
     {
-        return $this->subject("Pekerjaan {$this->checkout->Camp->title} telah selesai")->markdown('emails.checkout.paid', [
+        return $this->subject("Jobpending {$this->checkout->Camp->title} {$this->checkout->judul} telah selesai")->markdown('emails.checkout.paid', [
             'checkout' => $this->checkout
         ]);
     }

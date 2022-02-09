@@ -2,7 +2,7 @@
 # Welcome!
 
 Hello {{$user->name}}
-welcome to the cave on jobpending apps
+welcome to the cave militan BUMA di aplikasi jobpending
 
 @component('mail::button', ['url' => route('login')])
 login here

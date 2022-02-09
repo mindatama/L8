@@ -1,10 +1,15 @@
 @component('mail::message')
-# Pekerjaanmu telah selesai
+# Pekerjaan {{$checkout->Camp->title}} dengan judul {{$checkout->judul}} telah selesai
 
-semangat pagi {{$checkout->User->name}}
+semangat pagi militan BUMA<br>
+terimakasih telah menyelesaikan pekerjaan {{$checkout->Camp->title}}, berikut detailnya : <br>
 <br>
-pekerjaan {{$checkout->Camp->title}} telah selesai, pertahankan safety performance-nya. saya dan anda selamat setiap hari
-
+judul : {{$checkout->judul}} <br>
+deskripsi : {{$checkout->deskripsi}} <br>
+tanggal mulai : {{$checkout->expired}} <br>
+estimasi pekerjaan : {{$checkout->cvc}} hari<br>
+selesai pekerjaan : {{$checkout->updated_at}}<br>
+pertahankan safety performance, saya dan anda selamat setiap hari
 @component('mail::button', ['url' => route('user.dashboard')])
 My Dashboard
 @endcomponent
