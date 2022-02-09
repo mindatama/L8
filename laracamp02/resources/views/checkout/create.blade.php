@@ -53,6 +53,13 @@
                                 @endif
                             </div>
                             <div class="mb-4">
+                                <label class="form-label">Deskripsi pekerjaan</label>
+                                <input name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" />
+                                @if ($errors->has('deskripsi'))
+                                    <p class="text-danger">{{$errors->first('deskripsi')}}</p>    
+                                @endif
+                            </div>
+                            <div class="mb-4">
                                 <label class="form-label">Judul Pekerjaan occupation</label>
                                 <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->judul}}" />
                                 @if ($errors->has('occupation'))
