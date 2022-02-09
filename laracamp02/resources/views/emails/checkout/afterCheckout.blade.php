@@ -1,5 +1,5 @@
 @component('mail::message')
-# Register Jobpending: {{$checkout->Camp->title}} judul {{$checkout->judul}}
+# Pendaftaran Jobpending: {{$checkout->Camp->title}} judul {{$checkout->judul}}
 
 Hey {{$checkout->User->name}}
 <br>
