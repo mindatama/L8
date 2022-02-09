@@ -29,9 +29,13 @@
                                 {{$checkout->created_at->format('M d, H:i')}}
                             </p>
                         </td>
-                        <td>
+                        <td><p>
+                            <strong>{{$checkout->judul}}</strong>
+                        </p>
+                            <p>
                             <strong>{{$checkout->deskripsi}}</strong>
-                        </td>
+                        </p>
+                    </td>
                         <td>
                             @if ($checkout->is_paid)
                             <strong class="text-success">Job Success</strong>
