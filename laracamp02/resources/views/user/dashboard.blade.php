@@ -38,9 +38,11 @@
                     </td>
                         <td>
                             @if ($checkout->is_paid)
-                            <strong class="text-success">Job Success</strong>
+                            <p>{{$checkout->User->name}} </p>
+                            <p><strong class="text-success">Job Success</strong></p>
                             @else
-                            <strong>On Progress</strong>
+                            <p>{{$checkout->User->name}} </p>
+                            <p><strong>On Progress</strong></p>
                             @endif
                         </td>
                         <td>
