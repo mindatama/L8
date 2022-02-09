@@ -1,7 +1,7 @@
 @component('mail::message')
-# Pendaftaran Jobpending: {{$checkout->Camp->title}} judul {{$checkout->judul}}
+# Pendaftaran Pekerjaan {{$checkout->Camp->title}} dengan judul {{$checkout->judul}}
 
-Hey {{$checkout->User->name}}
+Semangat pagi {{$checkout->User->name}}
 <br>
 terimakasih telah upload pekerjaan {{$checkout->Camp->title}}, <br>
 berikut detail pekerjaan : <br>
