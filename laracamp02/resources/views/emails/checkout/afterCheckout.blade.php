@@ -3,13 +3,13 @@
 
 Hey {{$checkout->User->name}}
 <br>
-thanks for upload job {{$checkout->Camp->title}}, 
-berikut detail pekerjaan : 
-pembuat : {{$checkout->User->name}}
-judul : {{$checkout->judul}}
-deskripsi : {{$checkout->deskripsi}}
-tanggal pekerjaan : {{$checkout->expired}}
-estimasi pekerjaan (hari) : {{$checkout->cvc}}
+thanks for upload job {{$checkout->Camp->title}}, <br>
+berikut detail pekerjaan : <br>
+pembuat : {{$checkout->User->name}} <br>
+judul : {{$checkout->judul}} <br>
+deskripsi : {{$checkout->deskripsi}} <br>
+tanggal pekerjaan : {{$checkout->expired}} <br>
+estimasi pekerjaan (hari) : {{$checkout->cvc}} <br>
 saya dan anda selamat setiap hari
 
 @component('mail::button', ['url' => route('dashboard', $checkout->id)])
