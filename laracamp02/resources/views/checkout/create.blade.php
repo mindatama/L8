@@ -54,7 +54,7 @@
                             </div>
                             <div class="mb-4">
                                 <label class="form-label">Deskripsi pekerjaan</label>
-                                <input name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" />
+                                <textarea rows="3" name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" />
                                 @if ($errors->has('deskripsi'))
                                     <p class="text-danger">{{$errors->first('deskripsi')}}</p>    
                                 @endif
@@ -76,14 +76,14 @@
                             <div class="mb-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">Tanggal pekerjaan expired</label>
+                                        <label class="form-label">Tanggal pekerjaan</label>
                                         <input name="expired" type="date" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('expired') ?: Auth::user()->expired}}" />
                                         @if ($errors->has('expired'))
                                             <p class="text-danger">{{$errors->first('expired')}}</p>    
                                         @endif
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <label class="form-label">estimasi hari cvc</label>
+                                        <label class="form-label">estimasi hari</label>
                                         <input name="cvc" type="number" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" maxlength="3" value="{{old('cvc') ?: Auth::user()->cvc}}" />
                                         @if ($errors->has('cvc'))
                                             <p class="text-danger">{{$errors->first('cvc')}}</p>    
