@@ -54,7 +54,7 @@
                             </div>
                             <div class="mb-4">
                                 <label class="form-label">Deskripsi pekerjaan</label>
-                                <input name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" />
+                                <textarea name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" ></textarea>
                                 @if ($errors->has('deskripsi'))
                                     <p class="text-danger">{{$errors->first('deskripsi')}}</p>    
                                 @endif
