@@ -48,14 +48,14 @@
                             <div class="mb-4">
                                 <label class="form-label">Judul</label>
                                 <input name="judul" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('judul') ?: Auth::user()->judul}}" />
-                                @if ($errors->has('card_number'))
+                                @if ($errors->has('judul'))
                                     <p class="text-danger">{{$errors->first('judul')}}</p>    
                                 @endif
                             </div>
                             <div class="mb-4">
                                 <label class="form-label">Deskripsi pekerjaan</label>
                                 <textarea name="deskripsi" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('deskripsi') ?: Auth::user()->deskripsi}}" ></textarea>
-                                @if ($errors->has('occupation'))
+                                @if ($errors->has('deskripsi'))
                                     <p class="text-danger">{{$errors->first('deskripsi')}}</p>    
                                 @endif
                             </div>
