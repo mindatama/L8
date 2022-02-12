@@ -30,7 +30,9 @@ class Store extends FormRequest
             'occupation' => 'required',
             'card_number' => 'required',
             'expired' => 'required',
-            'cvc' => 'required'
+            'cvc' => 'required',
+            'judul' => 'required',
+            'deskripsi' => 'required'
         ];
     }
 }
