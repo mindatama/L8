@@ -32,8 +32,7 @@
                         <td><p>
                             <strong>{{$checkout->judul}}</strong>
                         </p>
-                            <p>
-                            {{$checkout->deskripsi}}</strong>
+                            {{$checkout->cvc}} hari kerja
                         </p>
                     </td>
                         <td>
