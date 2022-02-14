@@ -27,8 +27,6 @@ class Store extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'occupation' => 'required',
-            'card_number' => 'required',
             'expired' => 'required',
             'cvc' => 'required',
             'judul' => 'required',
