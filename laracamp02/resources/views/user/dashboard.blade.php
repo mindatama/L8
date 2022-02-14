@@ -26,7 +26,7 @@
                                 <strong>{{$checkout->Camp->title}}</strong>
                             </p>
                             <p>
-                                {{$checkout->created_at->format('M d, H:i')}}
+                                {{$checkout->expired->format('d M Y')}}
                             </p>
                         </td>
                         <td><p>
