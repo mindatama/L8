@@ -60,7 +60,7 @@
                                 @endif
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Judul Pekerjaan occupation</label>
+                                {{-- <label class="form-label">Judul Pekerjaan occupation</label>
                                 <input name="occupation" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{old('occupation') ?: Auth::user()->judul}}" />
                                 @if ($errors->has('occupation'))
                                     <p class="text-danger">{{$errors->first('occupation')}}</p>    
@@ -72,7 +72,7 @@
                                 @if ($errors->has('card_number'))
                                     <p class="text-danger">{{$errors->first('card_number')}}</p>    
                                 @endif
-                            </div>
+                            </div> --}}
                             <div class="mb-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
