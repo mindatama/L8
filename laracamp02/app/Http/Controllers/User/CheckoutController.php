@@ -50,14 +50,16 @@ class CheckoutController extends Controller
         $data['user_id'] = Auth::id();
         $data['camp_id'] = $camp->id;
 
-        $user = Auth::user(); 
+        
+        $alluser = user(); 
+        $user = Auth::user();
         $user->email = $data['email'];
         $user->name = $data['name'];
         // $user->occupation = $data['occupation'];
         $user->save();
 
         $checkout = Checkout::create($data);
-        Mail::to($data['email'])->send(new AfterCheckout($checkout));
+        Mail::to($alluser->email)->send(new AfterCheckout($checkout));
         return redirect(route('checkout.success'));
     }
 
