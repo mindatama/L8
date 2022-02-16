@@ -57,7 +57,8 @@ class CheckoutController extends Controller
         $user->save();
 
         $checkout = Checkout::create($data);
-        Mail::to($user->email)->send(new AfterCheckout($checkout));
+        foreach ($data['email'] as $recipient) {
+        Mail::to($recipient)->send(new AfterCheckout($checkout)); }
         return redirect(route('checkout.success'));
     }
 
