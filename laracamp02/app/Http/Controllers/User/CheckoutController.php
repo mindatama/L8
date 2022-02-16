@@ -59,7 +59,7 @@ class CheckoutController extends Controller
         $checkout = Checkout::create($data);
         foreach ($user->email as $recipient) {
         Mail::to($recipient)->send(new AfterCheckout($checkout)); }
-        return redirect(route('checkout.success'));
+        // return redirect(route('checkout.success'));
     }
 
     /**
