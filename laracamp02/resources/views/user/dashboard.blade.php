@@ -45,17 +45,9 @@
                             @endif
                         </td>
                         <td>
-                            <div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" area-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="contohModal">
-                                            Contact Support
-                                        </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                            <button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="contohModal">
+                            Contact Support
+                            </button>
                         </td>
                     </tr>
                     @empty
