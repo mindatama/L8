@@ -45,9 +45,19 @@
                             @endif
                         </td>
                         <td>
-                            <a href="#" class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="contohModal">
                                 Contact Support
-                            </a>
+                            </button>
+                            <div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" area-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                   
+                                       <img src="{{asset('images/item_bootcamp_buma.png')}}" width="" height="" alt="...">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </td>
                     </tr>
                     @empty
